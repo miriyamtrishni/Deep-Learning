@@ -1,0 +1,33 @@
+1. With very few hidden nodes  
+
+The model has low capacity — not enough neurons to learn the complex flower-shaped dataset.
+
+The decision boundary looks almost like a straight line or simple curve.
+
+Accuracy is low, because the model underfits (it can’t capture the data’s complexity).
+
+2. Moderate hidden nodes  
+
+The model starts learning the nonlinear boundaries.
+
+The hidden layer has just enough neurons to capture the flower pattern.
+
+Accuracy jumps up significantly (often >90%).
+
+This is usually the sweet spot for simple datasets.
+
+3. Large hidden nodes (e.g., 20–50)
+
+The network has much higher capacity (many parameters).
+
+It can fit the training dataset very well — sometimes almost perfectly.
+
+Accuracy on training data becomes very high (close to 100%).
+
+But the decision boundary may become very “wiggly” (too sensitive to the training data).
+
+Risk: overfitting — great performance on training data, but may generalize poorly on unseen data.
+
+Accuracy rises quickly as you increase hidden nodes (fixing underfitting),
+then it levels off (enough neurons to learn the dataset),
+too many neurons just risk overfitting (not much gain in training accuracy).
