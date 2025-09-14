@@ -1,0 +1,9 @@
+Model-Based RL: The agent has (or learns) a model of the environment dynamics 
+𝑇(𝑠′∣𝑠,𝑎)T(s′∣s,a) and/or rewards 𝑅(𝑠,𝑎)R(s,a).
+ Algorithms like Policy Iteration and Value Iteration use the model to compute the optimal value function or policy by dynamic programming. They often converge in fewer iterations but require access to the model (or an accurate learned model).
+
+Model-Free RL: The agent directly learns value functions or policies from experience without explicitly building 
+𝑇 T or 𝑅
+R. Q-Learning is a classic model-free method: it updates Q-values from sampled transitions. It's more flexible (works when a model is unavailable) but can require many more samples/episodes to converge and can be slower in wall-clock time for large state spaces.
+
+Practical takeaway: model-based methods are sample-efficient and can compute optimal policies faster on small known models; model-free methods scale to unknown or very large problems where a model is unavailable, but need many interactions.
